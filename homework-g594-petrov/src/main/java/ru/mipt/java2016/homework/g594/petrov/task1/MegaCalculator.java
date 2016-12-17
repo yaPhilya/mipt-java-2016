@@ -15,7 +15,7 @@ public class MegaCalculator implements Calculator {
     private static final HashSet<Character> NUMERALS = new HashSet<>(Arrays.asList('1', '2', '3', '4', '5', '6', '7',
             '8', '9', '0', '.'));
     private static final HashSet<Character> OPERATORS = new HashSet<>(Arrays.asList('+', '-', '*', '/'));
-
+    private static final HashSet<String> FUNCTIONS = new HashSet<>(Arrays.asList("max", "min", "sin", "cos", "tg", "sqrt", "abs", "sign", "log", "log2", "rnd", "pow"));
     private static Integer getPriority(Character c) throws ParsingException {
         if (c.equals('+') || c.equals('-')) {
             return 1;
